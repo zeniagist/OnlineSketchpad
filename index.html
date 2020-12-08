@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Drawing App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link href="style.css"rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Title -->
+    <div id="header">Drawing App</div>
+
+    <!-- Input -->
+    <div class="inputContainer">
+      <!-- Color -->
+      <div class="input" id="colorInput">
+        <input type="color" list id="paintColor">
+      </div>
+
+      <!-- Drawing Cursor Size -->
+      <div class="input" id="thicknessInput">
+        <div id="circle"></div>
+      </div>
+
+      <!-- Slider -->
+      <div class="input">
+        <div id="slider"></div>
+      </div>
+    </div>
+
+    <!-- Canvas Container -->
+    <div id="canvasContainer">
+      <canvas id="paint" width="500px" height="400px"></canvas>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttonInputContainer">
+      <!-- Erase -->
+      <div class="buttonInput">
+        <span id="erase" class="button">Erase</span>
+      </div>
+
+      <!-- Save -->
+      <div class="buttonInput">
+        <span id="save" class="button">Save</span>
+      </div>
+
+      <!-- Reset -->
+      <div class="buttonInput">
+        <span id="reset" class="button">Reset</span>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
